@@ -3,4 +3,15 @@ layout: default
 title: "ManishJaisinghani"
 ---
 
+
+{% capture x %}
+{% include_relative experience.md %}
+{% endcapture %}
+
+
 {% include header.html %}
+<div markdown="1">
+
+{{ x | markdownify}}
+
+</div>
